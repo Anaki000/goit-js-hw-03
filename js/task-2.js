@@ -1,17 +1,18 @@
+
 function makeArray(firstArray, secondArray, maxLength) {
-    const res = [];
     const generalArray = firstArray.concat(secondArray);
     const arrayLength = generalArray.length;
     
 
-    if (arrayLength > maxLength) {
-         res.push(generalArray.slice(0, maxLength))
+     if (arrayLength > maxLength) {
+         return generalArray.slice(0, maxLength)
+         
         
     } else {
-         res.push(generalArray)
+         return generalArray
     }
     
-     return res
+     
 }
 
 
